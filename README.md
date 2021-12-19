@@ -1,4 +1,11 @@
 # market_alerts
-I want to have market &amp; asset alerts sent via email or SMS. There will be different types of alerts, each with their own information and purpose.
 
-Refer to project board for more information
+Easily set simple alerts for your watchlist with this alert module!
+
+How to Use:
+1. First make sure you have an API key from AlphaVantage, it is 100% free to use with I believe up to 5 API calls/minute.
+2. For good practice, set a Google app password. Navigate to your google account settings > security > app passwords. From here you can create a new app password to paste into this alert module.
+3. Declare your alert settings and let it run! A complete list of the settings can be found in docs.txt.
+
+
+More on this project can be found in the associated project board.
