@@ -1,1 +1,25 @@
+Alert Module Documentation
 
+Getting Started:
+1. Ensure you have an API key from AlphaVantage; https://www.alphavantage.co/support/#api-key
+2. (Optional) Create a Google app password from your Google account security settings
+3. Plug in your api key, email, and app password. Now you are all set to start creating alerts!
+
+Creating an alert:
+Start by creating an alert object: alert = Alert()
+- Declare any settings you wish when creating it such as: Alert(symbol='aapl', alert='signal', logic='MA Crossover')
+If you wish to set alert logic parameters you are able to with Alert.set_logic_params(**kwargs)
+
+Alert functionality:
+There are currently three alert types which can be declared as you create the alert object.
+'Signal' is for long/short signals using indicators
+'Stock' is for stock events
+'Position' is for position updates; you will need to input the start date of your position
+
+The logic parameter is the indicator used for signals
+'MA Crossover' uses up to 3 moving averages and their crossover for bullish/bearish alerts
+'MACD' uses 2 moving averages and their difference for bullish/bearish alerts
+'Price' alerts you when the asset moves past your declared price
+'Position' alerts you when your position is up/down X%
+
+Created by Kai Casterline
