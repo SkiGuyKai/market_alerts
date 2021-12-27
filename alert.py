@@ -8,7 +8,7 @@ import time
 '''Module that will be used to send out market alerts'''
 class Alert:
 
-    def __init__(self, symbol=None, alert=None, logic=None, interval='daily', contacts=['4259196224@tmomail.net']):
+    def __init__(self, symbol=None, alert=None, logic=None, interval='daily', contacts=['YOUR CONTACT(S) HERE']):
         self.symbol = symbol
         self.alert = alert
         self.logic = logic
