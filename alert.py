@@ -159,7 +159,7 @@ class Alert:
         print('Message Sent!')
 
 
-    def run(self, sec):
+    def run(self, sec=86400):
         '''Create loop to run alert'''
         while True:
             self.update()
