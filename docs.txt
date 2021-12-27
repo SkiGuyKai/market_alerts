@@ -3,23 +3,23 @@ Alert Module Documentation
 Getting Started:
 1. Ensure you have an API key from AlphaVantage; https://www.alphavantage.co/support/#api-key
 2. (Optional) Create a Google app password from your Google account security settings
-3. Plug in your api key, email, and app password. Now you are all set to start creating alerts!
+3. Plug in your api key (line 17), email (line 132), and app password (line 134). Now you are all set to start creating alerts!
 
 Creating an alert:
 Start by creating an alert object: alert = Alert()
-- Declare any settings you wish when creating it such as: Alert(symbol='aapl', alert='signal', logic='MA Crossover')
+- Declare any settings you wish when creating it such as: Alert(symbol='aapl', alert='Signal', logic='MA Crossover')
 If you wish to set alert logic parameters you are able to with Alert.set_logic_params(**kwargs)
 
 Alert functionality:
-There are currently three alert types which can be declared as you create the alert object.
-'Signal' is for long/short signals using indicators
-'Stock' is for stock events
-'Position' is for position updates; you will need to input the start date of your position
+The alert parameter is optional as it is only used for notification clarity (notif. heading). Here's what I reccommend:
+'Signal' for long/short signals using indicators
+'Stock' for stock events
+'Position' for position updates; you will need to input the start date of your position (future update)
 
-The logic parameter is the indicator used for signals
-'MA Crossover' uses up to 3 moving averages and their crossover for bullish/bearish alerts
-'MACD' uses 2 moving averages and their difference for bullish/bearish alerts
-'Price' alerts you when the asset moves past your declared price
-'Position' alerts you when your position is up/down X%
+The logic parameter is the indicator used for signals, there are 4 currently:
+1. 'MA Crossover' uses up to 3 moving averages and their crossover for bullish/bearish alerts
+2. 'MACD' uses 2 moving averages and their difference for bullish/bearish alerts
+3. 'Price' alerts you when the asset moves past your declared price
+4. 'Position' alerts you when your position is up/down X% (future update)
 
 Created by Kai Casterline
